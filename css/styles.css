@@ -36,3 +36,22 @@ h3 {
 p {
     margin: 0;
 }
+
+/*Links*/
+
+.link-arrow {
+    color: var(--color-acent);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.link-arrow::after {
+    content: "->";
+    margin-left: 5px;
+}
+
+.link-arrow:hover::after {
+    margin-left: 10px;
+    transition: margin 1s;
+}
